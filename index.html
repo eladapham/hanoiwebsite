@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hà Nội • Trang chủ</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="index.html">Hà Nội</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="history.html">Lịch sử</a>
+        <a href="specialties.html">Đặc sản</a>
+        <a href="entertainment.html">Vui chơi</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner" aria-label="Banner - Kỷ niệm 71 năm">
+    <img class="banner-bg" src="images/ky-niem-71-nam.png" alt="Kỷ niệm 71 năm Ngày giải phóng Thủ đô 10/10/2025">
+   
+    <!-- Countdown -->
+    <div id="countdown-timer" class="countdown-timer" data-aos="zoom-in" data-aos-delay="200">
+      <div class="time-box"><span id="days">0</span><small>Ngày</small></div>
+      <div class="time-box"><span id="hours">00</span><small>Giờ</small></div>
+      <div class="time-box"><span id="minutes">00</span><small>Phút</small></div>
+      <div class="time-box"><span id="seconds">00</span><small>Giây</small></div>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="container">
+    <section id="intro" data-aos="fade-up">
+      <h1>Hà Nội - Trái tim của Việt Nam</h1>
+      <p>
+        Hà Nội, thủ đô ngàn năm văn hiến, mang trên mình lịch sử phong phú và văn hóa đặc trưng. Thành phố nằm bên bờ sông Hồng, là trung tâm hành chính-chính trị, đồng thời là điểm giao thoa của nhiều giá trị văn hoá, nghệ thuật, ẩm thực và giáo dục.
+      </p>
+      <p>
+        Với hơn 5.000 di tích, trong đó có rất nhiều di tích quốc gia và một số di sản thế giới, Hà Nội giữ vai trò quan trọng trong nhận diện văn hóa dân tộc. Thủ đô vừa bảo tồn các giá trị truyền thống vừa không ngừng đổi mới để hội nhập và phát triển.
+      </p>
+    </section>
+
+    <!-- Quick Links -->
+    <section id="quick-links" data-aos="fade-up" data-aos-delay="100">
+      <h2>Khám phá nhanh</h2>
+      <div class="grid-2">
+        <a href="about.html" class="quick-card">📍 Giới thiệu</a>
+        <a href="history.html" class="quick-card">📜 Lịch sử</a>
+        <a href="specialties.html" class="quick-card">🍜 Đặc sản</a>
+        <a href="entertainment.html" class="quick-card">🎉 Vui chơi</a>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section id="highlights" data-aos="fade-up" data-aos-delay="80">
+      <h2>Những điểm nhấn không thể bỏ qua</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Hồ Gươm & Đền Ngọc Sơn</h3>
+          <p>Hồ Gươm là biểu tượng của Hà Nội, nằm ở trung tâm thành phố. Cầu Thê Húc, Đền Ngọc Sơn và Rùa Hồ Gươm là những hình ảnh gắn liền với truyền thuyết lịch sử của thủ đô.</p>
+          <img src="images/ho-guom.jpg" alt="Hồ Gươm" class="content-img fixed-img">
+        </article>
+        <article class="card">
+          <h3>Văn Miếu - Quốc Tử Giám</h3>
+          <p>Được xem là trường đại học đầu tiên của Việt Nam, Văn Miếu là biểu tượng của truyền thống hiếu học. Khuôn viên nhiều cây xanh và kiến trúc độc đáo thu hút khách trong nước và quốc tế.</p>
+          <img src="images/van-mieu.jpg" alt="Văn Miếu - Quốc Tử Giám" class="content-img fixed-img">
+        </article>
+        <article class="card">
+          <h3>Lăng Chủ tịch Hồ Chí Minh</h3>
+          <p>Lăng Bác là nơi nhân dân tôn kính, hàng triệu lượt khách viếng thăm mỗi năm. Công trình nằm trong quần thể Ba Đình, nơi từng diễn ra nhiều sự kiện trọng đại của dân tộc.</p>
+          <img src="images/lang-bac.jpg" alt="Lăng Bác" class="content-img fixed-img">
+        </article>
+      </div>
+    </section>
+
+    <!-- History teaser -->
+    <section id="history-teaser" data-aos="fade-up" data-aos-delay="80">
+      <h2>Tóm tắt lịch sử</h2>
+      <p>
+        - <strong>1010:</strong> Lý Công Uẩn dời đô, đặt tên Thăng Long. <br>
+        - <strong>1831:</strong> Dưới triều Minh Mạng, đổi tên thành Hà Nội. <br>
+        - <strong>1945:</strong> Cách mạng Tháng Tám, tuyên ngôn Độc lập. <br>
+        - <strong>1954:</strong> Ngày 10/10 Hà Nội được giải phóng. <br>
+        - <strong>1976:</strong> Hà Nội chính thức là thủ đô của cả nước sau thống nhất.
+      </p>
+      <img src="images/lich-su.jpg" alt="Hà Nội lịch sử" class="content-img fixed-img">
+      <p>Muốn biết chi tiết từng mốc — Hãy mở trang <a href="history.html">Lịch sử</a>.</p>
+    </section>
+
+    <!-- Food teaser -->
+    <section id="food-teaser" data-aos="fade-up" data-aos-delay="80">
+      <h2>Ẩm thực Hà Nội</h2>
+      <div class="grid-2">
+        <div class="card-small">
+          <img src="images/pho.jpg" alt="Phở Hà Nội" class="content-img fixed-img">
+          <p><b>Phở</b><br>Tinh hoa ẩm thực Hà Nội.</p>
+        </div>
+        <div class="card-small">
+          <img src="images/bun-cha.jpg" alt="Bún chả" class="content-img fixed-img">
+          <p><b>Bún chả</b><br>Món dân dã nhưng nổi tiếng.</p>
+        </div>
+      </div>
+      <p>Xem thêm ở trang <a href="specialties.html">Đặc sản</a>.</p>
+    </section>
+
+    <!-- Calendar -->
+    <section class="calendar" data-aos="fade-up" data-aos-delay="100">
+      <h2>📅 Ngày lễ Việt Nam 2025</h2>
+      <table id="holiday-table">
+        <thead>
+          <tr><th>Ngày</th><th>Sự kiện</th></tr>
+        </thead>
+        <tbody>
+          <tr data-date="01/01"><td>01/01</td><td>Tết Dương Lịch</td></tr>
+          <tr data-date="30/04"><td>30/04</td><td>Giải phóng miền Nam</td></tr>
+          <tr data-date="01/05"><td>01/05</td><td>Quốc tế Lao động</td></tr>
+          <tr data-date="02/09"><td>02/09</td><td>Quốc khánh</td></tr>
+          <tr data-date="10/10"><td>10/10</td><td>Giải phóng Thủ đô</td></tr>
+          <tr data-date="20/10"><td>20/10</td><td>Ngày Phụ nữ Việt Nam</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Hà Nội</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js" defer></script>
+  <script>AOS.init({ duration:700, once:true });</script>
+</body>
+</html>
