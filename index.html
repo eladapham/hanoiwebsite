@@ -5,30 +5,44 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hà Nội • Trang chủ</title>
 
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+
   <!-- AOS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="site-header">
-    <div class="nav-container">
-      <a class="brand" href="index.html">Hà Nội</a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">Giới thiệu</a>
-        <a href="history.html">Lịch sử</a>
-        <a href="specialties.html">Đặc sản</a>
-        <a href="entertainment.html">Vui chơi</a>
-        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
-      </nav>
+ <header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="index.html">Hà Nội</a>
+
+
+    <!-- Nav -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="history.html">Lịch sử</a>
+      <a href="specialties.html">Đặc sản</a>
+      <a href="entertainment.html">Vui chơi</a>
+    </nav>
+
+
+    <!-- Dark/Light + Hamburger -->
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
       <button class="menu-toggle" aria-label="Open menu">☰</button>
     </div>
-  </header>
+  </div>
+</header>
+
+
+
 
   <!-- Banner -->
   <section class="banner" aria-label="Banner - Kỷ niệm 71 năm">
@@ -43,6 +57,7 @@
     </div>
   </section>
 
+
   <!-- Main -->
   <main class="container">
     <section id="intro" data-aos="fade-up">
@@ -55,6 +70,7 @@
       </p>
     </section>
 
+
     <!-- Quick Links -->
     <section id="quick-links" data-aos="fade-up" data-aos-delay="100">
       <h2>Khám phá nhanh</h2>
@@ -65,6 +81,7 @@
         <a href="entertainment.html" class="quick-card">🎉 Vui chơi</a>
       </div>
     </section>
+
 
     <!-- Highlights -->
     <section id="highlights" data-aos="fade-up" data-aos-delay="80">
@@ -88,6 +105,7 @@
       </div>
     </section>
 
+
     <!-- History teaser -->
     <section id="history-teaser" data-aos="fade-up" data-aos-delay="80">
       <h2>Tóm tắt lịch sử</h2>
@@ -101,6 +119,7 @@
       <img src="images/lich-su.jpg" alt="Hà Nội lịch sử" class="content-img fixed-img">
       <p>Muốn biết chi tiết từng mốc — Hãy mở trang <a href="history.html">Lịch sử</a>.</p>
     </section>
+
 
     <!-- Food teaser -->
     <section id="food-teaser" data-aos="fade-up" data-aos-delay="80">
@@ -117,6 +136,7 @@
       </div>
       <p>Xem thêm ở trang <a href="specialties.html">Đặc sản</a>.</p>
     </section>
+
 
     <!-- Calendar -->
     <section class="calendar" data-aos="fade-up" data-aos-delay="100">
@@ -137,11 +157,13 @@
     </section>
   </main>
 
+
   <footer>
     <div class="container">
       <p>© 2025 Hà Nội</p>
     </div>
   </footer>
+
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -149,3 +171,5 @@
   <script>AOS.init({ duration:700, once:true });</script>
 </body>
 </html>
+
+
