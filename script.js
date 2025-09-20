@@ -1,6 +1,8 @@
+
 /* ============================
    script.js - global behaviors
    ============================ */
+
 
 /* THEME toggle */
 (function themeInit(){
@@ -19,6 +21,7 @@
   });
 })();
 
+
 /* MOBILE menu toggle */
 (function menuInit(){
   const mBtn = document.querySelector('.menu-toggle');
@@ -26,6 +29,7 @@
   if(!mBtn || !nav) return;
   mBtn.addEventListener('click', () => nav.classList.toggle('show'));
 })();
+
 
 /* COUNTDOWN with next holiday */
 (function countdownInit(){
@@ -35,23 +39,28 @@
   const elSeconds = document.getElementById('seconds');
   const container = document.getElementById('countdown-timer');
 
+
   const holidays = [
     { date: '2025-10-10T00:00:00', label: 'Ngày Giải phóng Thủ đô' },
     { date: '2025-12-31T00:00:00', label: 'Tết Dương lịch' },
     { date: '2026-04-30T00:00:00', label: 'Giải phóng miền Nam' }
   ];
 
+
   function getNextHoliday(){
     const now = new Date();
     return holidays.find(h => new Date(h.date) > now);
   }
 
+
   let currentHoliday = getNextHoliday();
+
 
   function update(){
     if(!currentHoliday) return;
     const now = new Date();
     let diff = new Date(currentHoliday.date).getTime() - now.getTime();
+
 
     if(diff <= 0){
       currentHoliday = getNextHoliday();
@@ -62,6 +71,7 @@
       return;
     }
 
+
     const days = Math.floor(diff / (1000*60*60*24));
     diff -= days * (1000*60*60*24);
     const hours = Math.floor(diff / (1000*60*60));
@@ -70,15 +80,18 @@
     diff -= minutes * (1000*60);
     const seconds = Math.floor(diff / 1000);
 
+
     if(elDays) elDays.textContent = days;
     if(elHours) elHours.textContent = String(hours).padStart(2,'0');
     if(elMinutes) elMinutes.textContent = String(minutes).padStart(2,'0');
     if(elSeconds) elSeconds.textContent = String(seconds).padStart(2,'0');
   }
 
+
   update();
   const tick = setInterval(update, 1000);
 })();
+
 
 /* Calendar highlight + click to countdown */
 (function holidayCalendar(){
@@ -87,6 +100,7 @@
   const rows = table.querySelectorAll('tr[data-date]');
   const today = new Date();
   const todayStr = `${String(today.getDate()).padStart(2,'0')}/${String(today.getMonth()+1).padStart(2,'0')}`;
+
 
   rows.forEach(r=>{
     if(r.getAttribute('data-date')===todayStr){
@@ -102,12 +116,14 @@
   });
 })();
 
+
 /* BANNER parallax */
 (function bannerParallax(){
   const banner = document.querySelector('.banner');
   if(!banner) return;
   const layer = banner.querySelector('.parallax-layer');
   if(!layer) return;
+
 
   let ticking = false;
   function onScroll(){
@@ -126,3 +142,7 @@
   window.addEventListener('resize',onScroll);
   onScroll();
 })();
+
+
+
+
