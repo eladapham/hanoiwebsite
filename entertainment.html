@@ -10,20 +10,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="nav-container">
-      <a class="brand" href="index.html">Hà Nội</a>
-      <nav class="main-nav">
+ <header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="index.html">Hà Nội</a>
+
+
+    <div class="nav-right">
+      <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">Giới thiệu</a>
         <a href="history.html">Lịch sử</a>
         <a href="specialties.html">Đặc sản</a>
         <a href="entertainment.html">Vui chơi</a>
-        <button id="theme-toggle">🌙</button>
       </nav>
-      <button class="menu-toggle">☰</button>
+
+
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+      </div>
     </div>
-  </header>
+  </div>
+</header>
+
 
   <main class="container">
     <section data-aos="fade-up">
@@ -99,3 +108,4 @@
   <script>AOS.init({ duration:700, once:true });</script>
 </body>
 </html>
+
